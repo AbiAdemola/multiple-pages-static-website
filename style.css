@@ -4,15 +4,13 @@
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body .bodyafter-nav {
-    margin: 60px auto;
-    max-width: 1500px;
+body {
+    margin: 100px 0;
 }
 
 h1,
 h2,
 h3 {
-    text-align: center;
     margin: 0;
 }
 
@@ -22,7 +20,6 @@ h1 {
 
 h2 {
     font-size: 48px;
-    margin-top: 30px;
 }
 
 h3 {
@@ -33,7 +30,6 @@ h3 {
 p {
     font-size: 18px;
     line-height: 1.5;
-    text-align: center;
 }
 
 .navigation-links {
@@ -68,9 +64,11 @@ p {
 }
 
 .about-paragraphs {
-    display: flex;
     margin: 30px 0;
-    margin-left: 0;
+}
+
+.about-paragraphs p {
+    margin: 10px;
 }
 
 .email-link {
@@ -85,29 +83,34 @@ p {
     text-decoration: underline;
 }
 
-.ps-10 {
-    padding-left: 310px;
-}
-
-.mt-n1 {
-    margin-left: -1.5rem !important;
-    margin-right: -1.5rem !important;
-}
-
-.appheader h2 {
-    text-align: left;
-    margin-top: 0;
-}
-
-.button {
+.button-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
-    margin: 0;
     border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .button-link {
+        display: block;
+        text-align: center;
+        margin: 0 20px;
+    }
+}
